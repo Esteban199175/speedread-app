@@ -48,7 +48,7 @@ export function RsvpControls({
             min={100}
             max={900}
             step={25}
-            onValueChange={(value) => onWpmChange(value)}
+            onValueChange={(value) => onWpmChange(Number(value))}
             className="flex-1"
           />
         </div>

@@ -41,7 +41,7 @@ export function ComprehensionChart({ data }: { data: ComprehensionDataPoint[] })
           axisLine={false}
         />
         <Tooltip
-          formatter={(v: number) => [`${Math.round(v)}%`, "Score"]}
+          formatter={(v) => [`${Math.round(Number(v))}%`, "Score"]}
           contentStyle={{
             fontSize: 12,
             borderRadius: 6,
