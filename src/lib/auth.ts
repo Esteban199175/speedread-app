@@ -16,6 +16,7 @@ export const auth = betterAuth({
     "http://localhost:3000",
     "http://localhost:3001",
     "http://localhost:3002",
+    "https://speedread-app-three.vercel.app",
   ],
   plugins: [nextCookies()],
 });
