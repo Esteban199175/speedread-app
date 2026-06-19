@@ -36,6 +36,12 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local embedded postgres data
+/.pgdata
+
+# local dev logs
+*.log
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
