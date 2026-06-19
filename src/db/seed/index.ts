@@ -3,7 +3,9 @@ import { Pool } from "pg";
 import { passages, quizzes } from "../schema";
 import type { QuizQuestion } from "../schema";
 
-process.loadEnvFile(".env.local");
+if (!process.env.DATABASE_URL) {
+  process.loadEnvFile(".env.local");
+}
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 const db = drizzle(pool);
