@@ -38,7 +38,7 @@ export function QuizResult({ score, correct, total, onReadAgain }: QuizResultPro
         <Button variant="outline" onClick={onReadAgain}>
           Read again
         </Button>
-        <Button render={<Link href="/reader" />}>Try another passage</Button>
+        <Button nativeButton={false} render={<Link href="/reader" />}>Try another passage</Button>
       </div>
     </div>
   );

@@ -122,7 +122,7 @@ export default async function DashboardPage() {
                 </span>
                 <p className="font-medium">{title}</p>
                 <p className="text-sm text-muted-foreground">{desc}</p>
-                <Button size="sm" className="mt-auto" render={<Link href={href} />}>
+                <Button size="sm" className="mt-auto" nativeButton={false} render={<Link href={href} />}>
                   {cta}
                 </Button>
               </div>
@@ -131,8 +131,8 @@ export default async function DashboardPage() {
         </div>
       ) : (
         <div className="mb-6 flex gap-3">
-          <Button render={<Link href="/reader" />}>Start reading session</Button>
-          <Button variant="outline" render={<Link href="/library" />}>
+          <Button nativeButton={false} render={<Link href="/reader" />}>Start reading session</Button>
+          <Button variant="outline" nativeButton={false} render={<Link href="/library" />}>
             My library
           </Button>
         </div>

@@ -17,15 +17,15 @@ export default async function Home() {
       </p>
       <div className="mt-8 flex gap-4">
         {session ? (
-          <Button size="lg" render={<Link href="/reader" />}>
+          <Button size="lg" nativeButton={false} render={<Link href="/reader" />}>
             Start reading
           </Button>
         ) : (
           <>
-            <Button size="lg" render={<Link href="/signup" />}>
+            <Button size="lg" nativeButton={false} render={<Link href="/signup" />}>
               Get started free
             </Button>
-            <Button size="lg" variant="outline" render={<Link href="/login" />}>
+            <Button size="lg" variant="outline" nativeButton={false} render={<Link href="/login" />}>
               Sign in
             </Button>
           </>
